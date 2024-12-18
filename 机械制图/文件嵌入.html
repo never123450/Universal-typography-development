@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .format7_file {
+            height: 78.75px;
+            width: 100%;
+            background: url('/theme/file/d4331424-9511-487f-85eb-c1fe4df52cdc') no-repeat left / 218.75px 78.75px, url('/theme/file/3f9cf54a-bb16-4ac7-99f1-5f2967a52125') no-repeat right / 253.75px 78.75px;
+            -webkit-clip-path: polygon(calc(100% - 30px) 0%, 100% 30px, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(calc(100% - 30px) 0%, 100% 30px, 100% 100%, 0 100%, 0 0);
+            position: relative;
+            cursor: pointer;
+            z-index: 90;
+            background-color: #fb8535;
+        }
+
+        .format7_file::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 4;
+            width: 100%;
+            height: 90px;
+            -webkit-clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, calc(100% - 5px) 100%, calc(100% - 5px) 32px, calc(100% - 32px) 5px, 0 5px, 0 0);
+            clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, calc(100% - 5px) 100%, calc(100% - 5px) 32px, calc(100% - 32px) 5px, 0 5px, 0 0);
+            background: linear-gradient(279deg, #231F20 0%, #5E5B5B 100%);
+            background-size: 100%;
+        }
+        .format7_file_inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 100;
+        }
+        .format7_file_inner::before {
+            content: '';
+            display: block;
+            width: 147px;
+            height: 117px;
+            position: absolute;
+            left: -61px;
+            top: -39px;
+            /*background: url(/theme/file/fb5b7e2a-1a19-4de4-a439-3dc21b632719) no-repeat;*/
+            background-size: 100%;
+            z-index: 101;
+        }
+
+        .format7_file_title {
+            position: relative;
+            margin-left: 110px;
+            width: calc(100% - 150px);
+            height: 100%;
+            z-index: 110;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Source Han Sans;
+            font-variation-settings: "opsz" auto;
+            font-feature-settings: "kern" on;
+            background: linear-gradient(107deg, #FFFFFF -1%, rgba(255, 255, 255, 0.91) 101%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .format7_file_title::before {
+            content: '';
+            top: 18px;
+            left: -80px;
+            width: 46.25px;
+            height: 46.25px;
+            background: url(/theme/file/3c99da97-e61c-4f99-99f1-becc90380988) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            z-index: 105;
+        }
+
+        .format7_file_title::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: url(/theme/file/e3286cfd-8663-4dc7-adf9-52dfa4d15aa1) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            right: -10px;
+            transform: translate(0, 5%);
+        }
+    </style>
+</head>
+<body>
+<body>
+<div class="format7_file" contenteditable="false" data-custom="custom">
+    <div class="format7_file_inner">
+        <div class="format7_file_title">默认标题</div>
+    </div>
+</div>
+</body>
+</html>
